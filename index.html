@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
@@ -45,7 +46,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
     
 }
@@ -63,35 +63,6 @@ section{
     /*background: #fff;*/
     margin-bottom: 2rem;
 }
-.sub-heading{
-    color: var(--green);
-    font-size: 2rem;
-    padding-top: 1rem;
-    
-
-}
-.heading{
-    
-    color: var(--black);
-    font-size: 3rem;
-    padding-top: 0rem;
-    text-transform: uppercase;
-    
-}
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--black);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    padding: 0.8rem 3rem;
-}
-.btn:hover{
-    background: var(--green);
-    letter-spacing: 0.5rem;
-}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -104,7 +75,7 @@ header{
     left: 0;
     right: 0;
     background: black;
-    padding: 2rem 7%;
+    padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,6 +133,12 @@ section  .owl-carousel .item{
     width: 100%;
     height: 50rem;
    
+}
+section  .owl-carousel .item .item-title{
+   padding: 30rem 4rem;
+ 
+    font-size: 2rem;
+    color: #fff;
 }
 section  .owl-carousel{
     box-shadow: var(--box-shadow);
@@ -375,6 +352,11 @@ footer .footer-1{
     display: flex;
     flex-direction: column;
 }
+section  .owl-carousel .item .item-title{
+    padding: 10rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
    
 }
 </style>
@@ -401,7 +383,7 @@ footer .footer-1{
       </header>
       <section>
        
-            <div class="owl-carousel owl-theme">
+          <!--  <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img src="public/image-1.jpg" alt="">
                 </div>
@@ -419,6 +401,60 @@ footer .footer-1{
                 </div>
               
                
+            </div>-->
+            <div class="owl-carousel owl-theme">
+                <div class="item" style="background-image: url('public/image-1.jpg');   background-size: cover;">
+                    <div class="item-title"  data-aos="slide-up">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium hic atque nostrum expedita asperiores? Ab accusamus illo aliquam e</p>
+                        <div class="post-detail" >
+                            <p>23/07/2023</p>
+                            <p>posted by saurabh kumar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item" style="background-image: url('public/image-2.jpg');   background-size: cover;">
+                    <div class="item-title"  data-aos="slide-up">
+                    <a href=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium hic atque nostrum expedita asperiores? Ab accusamus illo aliquam e</p></a>   
+                        <div class="post-detail">
+                            <p>23/07/2023</p>
+                            <p>posted by saurabh kumar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item" style="background-image: url('public/image-3.jpg');   background-size: cover;">
+                    <div class="item-title"  data-aos="slide-up">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium hic atque nostrum expedita asperiores? Ab accusamus illo aliquam e</p>
+                        <div class="post-detail">
+                            <p>23/07/2023</p>
+                            <p>posted by saurabh kumar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item" style="background-image: url('public/image-4.jpg');   background-size: cover;">
+                    <div class="item-title"  data-aos="slide-up">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium hic atque nostrum expedita asperiores? Ab accusamus illo aliquam e</p>
+                        <div class="post-detail">
+                            <p>23/07/2023</p>
+                            <p>posted by saurabh kumar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="item" style="background-image: url('public/image-5.jpg');   background-size: cover;">
+                    <div class="item-title"  data-aos="slide-up">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, accusantium hic atque nostrum expedita asperiores? Ab accusamus illo aliquam e</p>
+                        <div class="post-detail">
+                            <p>23/07/2023</p>
+                            <p>posted by saurabh kumar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+               
             </div>
            
         
@@ -428,7 +464,7 @@ footer .footer-1{
         
         <div class="section-left">
             <h1>Latest Blog</h1>
-            <div class="blog">
+            <div class="blog"  data-aos="slide-up">
                 <div class="blog-img">
                     <img id="img" src="public/image-2.jpg" alt="">
 
@@ -444,7 +480,7 @@ footer .footer-1{
                             </div>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog"  data-aos="slide-up">
                 <div class="blog-img">
                     <img id="img" src="public/image-5.jpg" alt="">
 
@@ -457,7 +493,7 @@ footer .footer-1{
                     </div>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog"  data-aos="slide-up">
                 <div class="blog-img">
                     <img id="img" src="public/image-3.jpg" alt="">
 
@@ -470,7 +506,7 @@ footer .footer-1{
                     </div>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog"  data-aos="slide-up">
                 <div class="blog-img">
                     <img id="img" src="public/image-4.jpg" alt="">
 
@@ -483,7 +519,7 @@ footer .footer-1{
                     </div>
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog"  data-aos="slide-up">
                 <div class="blog-img">
                     <img id="img" src="public/image-6.jpg" alt="">
 
@@ -509,7 +545,7 @@ footer .footer-1{
     
         <div class="box-container">
         
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-1.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -519,7 +555,7 @@ footer .footer-1{
            
            
           </div>
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-2.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -529,7 +565,7 @@ footer .footer-1{
            
            
           </div>
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-3.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -539,7 +575,7 @@ footer .footer-1{
            
            
           </div>
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-4.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -548,7 +584,7 @@ footer .footer-1{
                 </div>
            
           </div>
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-5.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -556,7 +592,7 @@ footer .footer-1{
                 <p>posted by saurabh kumar</p>
                 </div>
           </div>
-          <div class="box">
+          <div class="box"  data-aos="slide-up">
             <img  id="imgk" src="public/image-1.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat even</p>
             <div class="post-detail">
@@ -573,14 +609,14 @@ footer .footer-1{
         <div class="contact">
         <div class="contact-form">
            <div class="form">
-            <form action="#">
-                <label for="name"> full name</label>
-                <input  type="text" placeholder="full name" required>
-                <label for="email">email</label>
-                <input  type="text" placeholder="email" required>
-                <label for="message">message</label>
-                <textarea name="" placeholder="enter your message" id="message" cols="30" rows="10" required></textarea>
-                <button>send message</button>
+            <form action="#"  data-aos="slide-up">
+                <label for="name" > full name</label>
+                <input  type="text" placeholder="full name" required >
+                <label for="email"  >email</label>
+                <input  type="text" placeholder="email" required >
+                <label for="message" >message</label>
+                <textarea name="" placeholder="enter your message" id="message" cols="30" rows="10" required ></textarea>
+                <button >send message</button>
 
             </form>
             </div>
@@ -700,6 +736,13 @@ footer .footer-1{
         }*/
     })
     
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init({
+        offset: 300,
+        duration: 1000,
+       });
     </script>
 </body>
 </html>
